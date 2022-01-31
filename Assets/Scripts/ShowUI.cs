@@ -18,7 +18,7 @@ public class ShowUI : MonoBehaviour
         if (player.gameObject.tag == "Player" && kwiatekzebrany == false)
         {
             uiObject.SetActive(true);
-
+            bool kwiatekzebrany = false;
         }
     }
     
