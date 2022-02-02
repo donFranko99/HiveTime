@@ -17,24 +17,13 @@ public class ScoreCount : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        scoreText.text = score.ToString() + " PYLKOW";
+        scoreText.text = score.ToString() + " pollen";
     }
 
     public void ScorePoint()
     {
         score += 1;
-        if(score == 1)
-        {
-            scoreText.text = score.ToString() + " PYLEK";
-        }
-        if (score >= 2 && score <= 4)
-        {
-            scoreText.text = score.ToString() + " PYLKI";
-        }
-        if (score >= 5 )
-        {
-            scoreText.text = score.ToString() + " PYLKOW";
-        }
-
+        scoreText.text = score.ToString() + " pollen";
+        
     }
 }

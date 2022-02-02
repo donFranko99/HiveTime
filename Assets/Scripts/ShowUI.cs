@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ShowUI : MonoBehaviour
 {
-    bool kwiatekzebrany = false;
+    bool kwiatkizebrane = false;
     
 
     public GameObject uiObject;
@@ -17,17 +17,16 @@ public class ShowUI : MonoBehaviour
     void OnTriggerEnter(Collider player)
     {
             
-        if (player.gameObject.tag == "Player" && kwiatekzebrany == false)
+        if (player.gameObject.tag == "Player" && kwiatkizebrane == false)
         {
             uiObject.SetActive(true);
-            bool kwiatekzebrany = false;
         }
     }
     
     void OnTriggerStay(Collider player)
     {
         
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             ScoreCount.instance.ScorePoint();
             Destroy(gameObject);
