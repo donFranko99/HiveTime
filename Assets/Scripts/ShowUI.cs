@@ -5,12 +5,14 @@ using UnityEngine;
 public class ShowUI : MonoBehaviour
 {
     bool kwiatkizebrane = false;
-    
 
+    [SerializeField] private GameObject spark;
+    
     public GameObject uiObject;
     
     void Start()
     {
+        spark.SetActive(false);
         uiObject.SetActive(false);
     }
     // Update is called once per frame
@@ -19,6 +21,7 @@ public class ShowUI : MonoBehaviour
             
         if (player.gameObject.tag == "Player" && kwiatkizebrane == false)
         {
+            spark.SetActive(true);
             uiObject.SetActive(true);
         }
     }
