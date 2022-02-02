@@ -5,8 +5,10 @@ using UnityEngine;
 public class ShowUI : MonoBehaviour
 {
     bool kwiatekzebrany = false;
-  
+    
+
     public GameObject uiObject;
+    
     void Start()
     {
         uiObject.SetActive(false);
@@ -24,7 +26,8 @@ public class ShowUI : MonoBehaviour
     
     void OnTriggerStay(Collider player)
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        
+        if (Input.GetKeyDown(KeyCode.E))
         {
             ScoreCount.instance.ScorePoint();
             Destroy(gameObject);

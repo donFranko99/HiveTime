@@ -23,6 +23,18 @@ public class ScoreCount : MonoBehaviour
     public void ScorePoint()
     {
         score += 1;
-        scoreText.text = score.ToString() + " PYLKOW";
+        if(score == 1)
+        {
+            scoreText.text = score.ToString() + " PYLEK";
+        }
+        if (score >= 2 && score <= 4)
+        {
+            scoreText.text = score.ToString() + " PYLKI";
+        }
+        if (score >= 5 )
+        {
+            scoreText.text = score.ToString() + " PYLKOW";
+        }
+
     }
 }
