@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Landing : MonoBehaviour
 {
@@ -26,6 +27,7 @@ public class Landing : MonoBehaviour
         {
             //pop message - thank you for trying our games' pre alpha demo
             //quit game after pressing escape
+            SceneManager.LoadScene("testworld");
         }
         else
         {

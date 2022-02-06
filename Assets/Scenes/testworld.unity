@@ -12302,7 +12302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b16bd17c4974041b9a2b8dff2962a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pollen: 0
+  pollen: 25
   stamina: 100
 --- !u!1001 &1008503084
 PrefabInstance:
