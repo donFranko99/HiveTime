@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Resources : MonoBehaviour
 {
-    [SerializeField] public int pollen;
+    [SerializeField] private int pollen = 0;
+    [SerializeField] private int stamina = 100;
+
 
     public bool haveEnoughPollen(int pollenRequired)
     {
@@ -19,6 +21,18 @@ public class Resources : MonoBehaviour
         }
     }
 
+    public void resetStaminaPoints()
+    {
+        this.stamina = 100;
+    }
+
+    public void addStamina(int n)
+    {
+        stamina += n;
+        if (stamina > 100)
+            stamina = 100;
+    }
+
     public void addPollen(int n)
     {
         this.pollen += n;
@@ -26,12 +40,15 @@ public class Resources : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        this.pollen = 0;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (true)
+        {
+            
+        }
     }
 }

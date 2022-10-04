@@ -3,7 +3,6 @@ using UnityEngine.UI;
 
 public class HelicopterController : MonoBehaviour
 {
-    public AudioSource HelicopterSound;
     public ControlPanel ControlPanel;
     public Rigidbody HelicopterModel;
     public HeliRotorController MainRotorController;
